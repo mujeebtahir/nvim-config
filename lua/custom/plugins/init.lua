@@ -16,6 +16,7 @@ return {
   --
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
+  'powerman/vim-plugin-AnsiEsc', -- he AnsiEsc.vim file, when sourced, will conceal Ansi escape sequences but will cause subsequent text to be colored as the escape sequence specifies.
 
   -- NOTE: Plugins can also be added by using a table,
   -- with the first argument being the link and the following
