@@ -162,7 +162,6 @@ return { -- LSP Configuration & Plugins
         filetypes = { 'c', 'cpp', 'objc', 'objcpp', 'cuda', 'proto', 'h' },
         -- capabilities = {},
       },
-      pyright = {},
       lua_ls = {
         -- cmd = {...},
         -- filetypes = { ...},
