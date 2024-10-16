@@ -1,4 +1,5 @@
 # nvim-config
+
 My personal NVIM config file. The the config files are based on kickstart.nvim [1]
 
 **Note**:
