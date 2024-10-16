@@ -38,6 +38,13 @@ return {
     },
   },
 
+  {
+    'azabiong/vim-highlighter',
+    init = function()
+      -- settings
+    end,
+  },
+
   -- -- Here is a more advanced example where we pass configuration
   -- -- options to `gitsigns.nvim`. This is equivalent to the following Lua:
   -- --    require('gitsigns').setup({ ... })
@@ -71,7 +78,13 @@ return {
   -- after the plugin has been loaded:
   --  config = function() ... end
   { 'akinsho/bufferline.nvim', version = '*', dependencies = 'nvim-tree/nvim-web-devicons' },
-  { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
+  {
+    'folke/todo-comments.nvim',
+    event = 'VimEnter',
+    dependencies = { 'nvim-lua/plenary.nvim' },
+    opts = { signs = false },
+  },
+
   -- {
   --   'mg979/vim-visual-multi',
   --   branch = 'master',
