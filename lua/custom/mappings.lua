@@ -125,4 +125,16 @@ vim.keymap.set('n', '<leader>gP', ':Neogit push<CR>', { desc = 'Neogit git push'
 vim.keymap.set('n', '<leader>gb', ':Telescope git_branches<CR>', { desc = 'Neogit git branch', silent = true, noremap = true })
 vim.keymap.set('n', '<leader>gB', ':G blame<CR>', { desc = 'Neogit git blame', silent = true, noremap = true })
 
-local gitsigns = require 'gitsigns'
+-- Disable the AnsiEsc plugin's keymap, it overlaps with <leader>sw "Treesitter word search"
+vim.keymap.del('n', '<leader>swp')
+
+-- Toggle Diffview
+vim.keymap.set('n', '<leader><leader>v', function()
+  if next(require('diffview.lib').views) == nil then
+    vim.cmd 'DiffviewOpen'
+  else
+    vim.cmd 'DiffviewClose'
+  end
+end)
+
+vim.keymap.set('n', '<leader>np', ':NoNeckPain<CR>', { desc = 'NoNeckPain', silent = true, noremap = true })
