@@ -137,4 +137,10 @@ vim.keymap.set('n', '<leader><leader>v', function()
   end
 end)
 
+local gitsigns = require 'gitsigns'
+
 vim.keymap.set('n', '<leader>np', ':NoNeckPain<CR>', { desc = 'NoNeckPain', silent = true, noremap = true })
+-- vim.keymap.set('n', '<leader>yf', ':CopyFileName', { desc = 'Copy FileName to register', silent = true, noremap = true })
+vim.keymap.set('n', '<leader>yf', ':let @+ = expand("%:t")<CR>', { desc = 'Copy Just The FileName to Register', silent = true, noremap = true })
+vim.keymap.set('n', '<leader>yp', ':let @+ = expand("%:p")<CR>', { desc = 'Copy Just The Absolute File Path to Register', silent = true, noremap = true })
+vim.keymap.set('n', '<leader>yr', ':let @+ = expand("%")<CR>', { desc = 'Copy Relative File Path to Register', silent = true, noremap = true })
